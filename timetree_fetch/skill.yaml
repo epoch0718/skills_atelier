@@ -1,0 +1,5 @@
+name: "timetree_fetch"
+title: "TimeTreeを取り込む"
+description: "Atelierのスプレッドシートへ、TimeTreeの予定をウェブアプリのscrape01で取り込み、終わったか確認する。"
+category: "Work and knowledge"
+include_in_prompt: false

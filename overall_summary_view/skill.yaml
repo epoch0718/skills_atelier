@@ -1,0 +1,5 @@
+name: "overall_summary_view"
+title: "全体集計を見る"
+description: "Atelierのスプレッドシートで、全体集計をAPIで読み、みんな合わせてどう・未収は誰かを答える。"
+category: "Work and knowledge"
+include_in_prompt: false

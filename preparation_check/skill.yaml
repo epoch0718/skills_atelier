@@ -1,0 +1,5 @@
+name: "preparation_check"
+title: "当日の作業を確認する"
+description: "Atelierのスプレッドシートで、事前準備シートをAPIで読み、その日の制作物・TODO・請求額・支払済を確認して伝える。"
+category: "Work and knowledge"
+include_in_prompt: false

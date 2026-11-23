@@ -1,0 +1,5 @@
+name: "timetree_input"
+title: "予約を入れる"
+description: "Atelierのスプレッドシートに予約を入力し、ウェブアプリのinput01でTimeTreeへ登録する。"
+category: "Work and knowledge"
+include_in_prompt: false

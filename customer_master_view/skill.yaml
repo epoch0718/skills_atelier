@@ -1,0 +1,5 @@
+name: "customer_master_view"
+title: "顧客マスタを見る"
+description: "Atelierのスプレッドシートで、顧客マスタをAPIで読み、誰がいるか・○○さんはいるかを答える。"
+category: "Work and knowledge"
+include_in_prompt: false

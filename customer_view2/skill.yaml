@@ -1,0 +1,5 @@
+name: "customer_view2"
+title: "顧客別2を見る"
+description: "Atelierのスプレッドシートで、顧客別2をAPIで読み、○○さんの月別の参加回数・請求額・制作物を答える。"
+category: "Work and knowledge"
+include_in_prompt: false

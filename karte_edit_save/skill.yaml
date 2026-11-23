@@ -1,0 +1,5 @@
+name: "karte_edit_save"
+title: "カルテ編集して保存する"
+description: "Atelierのスプレッドシートで、授業のカルテを編集してC5で保存し、TimeTreeシートへ反映されたか確認する。"
+category: "Work and knowledge"
+include_in_prompt: false

@@ -1,0 +1,5 @@
+name: "invoice_pdf_make"
+title: "請求書PDFを作る"
+description: "Atelierのスプレッドシートで、指定した日の請求書PDFをAPIで作り、Googleドライブのリンクを渡す。"
+category: "Work and knowledge"
+include_in_prompt: false
