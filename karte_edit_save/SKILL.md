@@ -20,7 +20,7 @@
 ## ウェブアプリで操作する方法（2026-11-22に確認）
 
 - TimeTree編集は、ウェブアプリのURLへPOSTすることでも操作できるよ。セルに直接書く必要はないよ。
-- ベースURLは `https://script.google.com/macros/s/AKfycbwFmB182LAD-aOIXXgQPJ6ioGz117NQdZbMFbFdU0ZpoyKKHcXHEEG8DlnINugr_QLP/exec` だよ。
+- ベースURLは `https://script.google.com/macros/s/AKfycbw0xvM-620l1MwSccqYieFewNR-K20etKAIj1K-Cp6Hg5UQnrvpj2r4PmIi0fl3Jw9A/exec` だよ。
 - 読み込みは `{"action":"load","label":"2026/11/12 13:30 柑谷さん"}` をPOSTするよ。labelはC3の一覧と同じ文字列（日時＋半角スペース＋名前）だよ。成功すると `{"ok":true,"action":"load","result":{"label":"...","row":9,"karteId":"6"}}` が返るよ。
 - 保存は `{"action":"save"}` をPOSTするよ。成功すると `{"ok":true,"action":"save","result":{"karteId":"6"}}` が返るよ。
 - curlで呼ぶときは `curl -L` を使うよ。`--post302` を付けると405エラーになるよ。リダイレクト先はGETで取りに行くのが正しい動きだよ。

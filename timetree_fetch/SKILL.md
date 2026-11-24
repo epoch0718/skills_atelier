@@ -21,7 +21,7 @@
 
 ## ウェブアプリで取り込む方法（2026-11-23に scrape01 で確認）
 
-- ベースURLは `https://script.google.com/macros/s/AKfycbwFmB182LAD-aOIXXgQPJ6ioGz117NQdZbMFbFdU0ZpoyKKHcXHEEG8DlnINugr_QLP/exec` だよ。
+- ベースURLは `https://script.google.com/macros/s/AKfycbw0xvM-620l1MwSccqYieFewNR-K20etKAIj1K-Cp6Hg5UQnrvpj2r4PmIi0fl3Jw9A/exec` だよ。
 - GETで呼ぶよ。`{URL}?action=scrape01` の形だよ。
 - POST（curl -L）では、再デプロイ後に411エラーになることがあるよ。GETで呼ぶのが確実だよ。
 - 返答は「起動を受け付けた」という意味で、完了待ちじゃないよ。成功すると `{"ok":true,"action":"scrape01","result":{"ok":true,"http":204,"runId":"...","runUrl":"...","logRow":41}}` が返るよ。
