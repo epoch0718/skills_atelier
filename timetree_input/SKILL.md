@@ -36,8 +36,8 @@
 ## ウェブアプリで登録する方法（2026-11-22に確認）
 
 - ベースURLは `https://script.google.com/macros/s/AKfycbw0xvM-620l1MwSccqYieFewNR-K20etKAIj1K-Cp6Hg5UQnrvpj2r4PmIi0fl3Jw9A/exec` だよ。
-- GETで呼ぶよ。`{URL}?action=input01` の形だよ。
-- POST（curl -L）では、再デプロイ後に411エラーになることがあるよ。GETで呼ぶのが確実だよ。
+- GETで呼ぶよ。`{URL}?action=input01` の形だよ。curlでは `-L` を付けてリダイレクトをたどるよ（`curl -sL`）。
+- `-L` なしだと返答が空になるよ。でも空でも登録は走っていることがあるよ。2026-11-26に `-L` なしで呼んだら空返答だったのに dispatch されていて、もう一度呼んだら同じ予約が2回登録されたよ。返答が空でも、まず `LOG_Actions` と100行目以降のログを確認して、dispatchされていれば再実行しないよ。
 - 返答は「起動を受け付けた」という意味で、完了待ちじゃないよ。成功すると `{"ok":true,"action":"input01","result":{"ok":true,"http":204,"runId":"...","runUrl":"..."}}` が返るよ。
 - `runUrl` で進み具合を見られるよ。`LOG_Actions` シートでも確認できるよ。
 - `dry_run` は付けないよ。`input01` は本番保存だからだよ。
